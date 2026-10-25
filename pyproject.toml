@@ -1,10 +1,10 @@
 [build-system]
-requires = ["setuptools>=68"]
+requires = ["setuptools>=77.0.3"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "cap-reference-audit"
-version = "0.1.0"
+version = "0.1.1"
 description = "Audit references across locally archived CAP 1.2 alert messages."
 readme = "README.md"
 requires-python = ">=3.11"
