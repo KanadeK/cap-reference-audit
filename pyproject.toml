@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cap-reference-audit"
+version = "0.1.0"
+description = "Audit references across locally archived CAP 1.2 alert messages."
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "KanadeK"}]
+dependencies = []
+
+[project.optional-dependencies]
+dev = ["pytest==9.1.1", "ruff==0.17.2", "build==1.6.1"]
+
+[project.scripts]
+cap-reference-audit = "cap_reference_audit.cli:main"
+
+[project.urls]
+Repository = "https://github.com/KanadeK/cap-reference-audit"
+Issues = "https://github.com/KanadeK/cap-reference-audit/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+
+[tool.ruff]
+target-version = "py311"
+line-length = 100
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]

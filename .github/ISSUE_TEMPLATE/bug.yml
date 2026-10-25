@@ -1,0 +1,16 @@
+name: Bug report
+description: Report a reproducible problem using non-sensitive data
+body:
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Reproduction and expected result
+      description: Include version, command, and a small synthetic example.
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Actual result
+    validations:
+      required: true

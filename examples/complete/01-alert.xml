@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alert xmlns="urn:oasis:names:tc:emergency:cap:1.2">
+  <identifier>example-1</identifier>
+  <sender>archive.example</sender>
+  <sent>2026-01-01T10:00:00-00:00</sent>
+  <status>Test</status>
+  <msgType>Alert</msgType>
+  <scope>Public</scope>
+  <note>Synthetic archive QA example; not an operational alert.</note>
+</alert>

@@ -1,0 +1,6 @@
+{
+  "module": "cap_reference_audit",
+  "args": ["@examples/complete", "--format", "json"],
+  "exit": 0,
+  "contains": "\"errors\": 0"
+}
